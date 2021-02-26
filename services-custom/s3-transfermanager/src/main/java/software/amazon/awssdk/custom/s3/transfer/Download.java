@@ -25,6 +25,4 @@ import software.amazon.awssdk.annotations.SdkPublicApi;
 public interface Download extends Transfer {
     @Override
     CompletableFuture<CompletedDownload> completionFuture();
-
-    DownloadState pause();
 }
